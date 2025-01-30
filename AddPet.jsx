@@ -25,7 +25,7 @@ const AddPet = () => {
       formData.append("upload_preset", "pet_photos")
 
       try {
-        const response = await axios.post(formData)
+        const response = await axios.post("htttps://api.cloudinary.com.v1_1/dkyrhwvue/image/upload", formData)
 
           setPet((prevPet) => ({
             ...prevPet,
